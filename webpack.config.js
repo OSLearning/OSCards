@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   mode: process.env.NODE_ENV,
-  entry: path.resolve(__dirname, './client/index.js'),
+  entry: path.resolve(__dirname, './client/src/index.js'),
   output: {
     publicPath: '/dist/',
     path: path.resolve(__dirname, 'dist'),
