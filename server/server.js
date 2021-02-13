@@ -25,13 +25,13 @@ if (process.env.NODE_ENV === 'production') {
 
 // serve index.html on the route '/'
 app.get('/', (req, res) => {
-  return res.status(200).sendFile(path.join(__dirname, '../client/index.html'));
+  return res.status(200).sendFile(path.join(__dirname, '../client/src/index.html'));
 });
 
 // serve styles.css on the endpoint '/styles.css'
-app.get('/styles.css', (req, res) => {
-  return res.status(200).sendFile(path.join(__dirname, '../client/styles.css'));
-});
+// app.get('/styles.css', (req, res) => {
+//   // return res.status(200).sendFile(path.join(__dirname, '../client/styles.css'));
+// });
 
 // 404 error.
 app.use('*', (req, res) => {
