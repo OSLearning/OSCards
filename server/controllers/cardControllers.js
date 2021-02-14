@@ -1,4 +1,4 @@
-/**
+/*
  * This controller handles routes to localhost:3000/card
  */
 
@@ -21,4 +21,11 @@ cardController.addCard = ((req, res, next) => {
     })
 });
 
+cardController.readCard = ((req, res, next) => {
+  // receive request access request.body and deconstruct model
+  const { term, definition, deck } = req.body;
+  
+})
+
 module.exports = cardController;
+
