@@ -3,16 +3,21 @@ const app = express();
 const path = require('path');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+require('dotenv').config();
+
 // pls handle body parser stuff
 
 const PORT = 3000;
 
-// app.use(express.urlencoded({ extended: true }));
-// app.use(express.json());
+const mongoURI = `${process.env.MONGO_URI}`;
 
-// const mongoURI = `${process.env.MONGO_URI_REAL}`;
-// // console.log(mongoURI);
-// console.log('process.env.MONGO_URI_REAL', process.env.MONGO_URI_REAL);
+mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true})
+  .then((result) => {
+    app.listen(PORT, () => console.log(`Listening on PORT: ${PORT}`));
+  })
+  .catch((err) => console.log(err));
+
+console.log('process.env.MONGO_URI', mongoURI);
 
 // parse urlencoded body content from incoming requests and place it in req.body
 app.use(bodyParser.json());
@@ -45,5 +50,3 @@ app.use((err, req, res, next) => {
   console.log(err);
   res.status(500).send('Internal Server Error');
 });
-
-app.listen(PORT, () => console.log(`Listening on PORT: ${PORT}`));

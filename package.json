@@ -31,7 +31,6 @@
     "express-session": "^1.13.0",
     "gulp": "^3.9.0",
     "mocha": "^2.4.5",
-    "mongodb": "^3.6.4",
     "mongoose": "^5.11.9",
     "mongoose-float": "^1.0.4",
     "node-fetch": "^2.3.0",
