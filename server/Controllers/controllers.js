@@ -1,1 +1,0 @@
-const Card = require('./Models/card.js');
