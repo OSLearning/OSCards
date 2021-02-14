@@ -6,6 +6,7 @@ cardController.addCard = ((req, res, next) => {
   // receive request access request.body and destructure model
   const { term, definition, deck } = req.body;
   // instantiate a new card document via the mongoose model
+  // [] xyz_review_flag: group devcision: do we want to keep in commented out console logs when we deploy to main branch?
   // console.log('LOOKHERE', CardModel)
   // console.log('LOOK AT REQ', term, definition, deck)
   CardModel
@@ -14,6 +15,7 @@ cardController.addCard = ((req, res, next) => {
       res.locals.newCard = results;
       return next();
     })
+    // [] xyz!_review_flag: group devcision: do we want to do anything with the error
     .catch((err) => {
     })
 });
