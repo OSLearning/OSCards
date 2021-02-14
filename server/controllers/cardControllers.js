@@ -15,7 +15,7 @@ cardController.addCard = ((req, res, next) => {
       res.locals.newCard = results;
       return next();
     })
-    // [] xyz!_review_flag: group devcision: do we want to do anything with the error
+    // [] xyz!_review_flag: group decision: do we want to do anything with the error
     .catch((err) => {
     })
 });
