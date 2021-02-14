@@ -30,6 +30,7 @@ if (process.env.NODE_ENV === 'production') {
   
  // instantiate router(s) for data calls 
 const cardRouter = require('./routes/cardRoutes.js');
+// console.log(cardRouter);
 app.use('/card', cardRouter);
 
 // serve index.html on the route '/'
