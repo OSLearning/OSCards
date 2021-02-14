@@ -24,13 +24,12 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 if (process.env.NODE_ENV === 'production') {
-  // statically serve everything in the build folder on the route '/build'
-  app.use('/build', express.static(path.join(__dirname, '../build')));
+  // statically serve everything in the dist folder on the route '/dist'
+  app.use('/dist', express.static(path.join(__dirname, '../dist')));
 }
-  
- // instantiate router(s) for data calls 
+
+// instantiate router(s) for data calls 
 const cardRouter = require('./routes/cardRoutes.js');
-// console.log(cardRouter);
 app.use('/card', cardRouter);
 
 // serve index.html on the route '/'
@@ -38,19 +37,12 @@ app.get('/', (req, res) => {
   return res.status(200).sendFile(path.join(__dirname, '../client/src/index.html'));
 });
 
-// serve styles.css on the endpoint '/styles.css'
-// app.get('/styles.css', (req, res) => {
-//   // return res.status(200).sendFile(path.join(__dirname, '../client/styles.css'));
-// });
-
-// 404 error.
+// 404 error
 app.use('*', (req, res) => {
   res.status(404).send('Not Found');
 });
 
-/**
- * Global error handler
- */
+// global error handler
 app.use((err, req, res, next) => {
   console.log(err);
   res.status(500).send('Internal Server Error');

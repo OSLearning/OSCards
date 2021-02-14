@@ -1,8 +1,10 @@
+/**
+ * This router handles routes to localhost:3000/card
+ */
+
 const express = require('express');
 const cardRouter = express.Router();
 const cardController = require('../controllers/cardControllers');
-
-// EVERYTHING HERE IS localhost:3000/card
 
 // /card/ routes post requests to '/' to cardController
 cardRouter.post('/', cardController.addCard, (req, res) => {
