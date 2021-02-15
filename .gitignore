@@ -3,3 +3,4 @@ node_modules
 app.config
 .DS_Store
 notes.txt
+package-lock.json
