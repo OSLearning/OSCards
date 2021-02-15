@@ -28,4 +28,3 @@ cardController.readCard = ((req, res, next) => {
 })
 
 module.exports = cardController;
-
