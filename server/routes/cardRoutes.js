@@ -13,16 +13,14 @@ cardRouter.post('/', cardController.addCard, (req, res) => {
 
 // [ ] hypothesis ... don't need a colon with params ...
 // /deck/[number]
-cardRouter.get('/decks/:deckId', cardController.readDeckOfCards, (req, res) => {
+cardRouter.get('/deck/:deckId', cardController.readDeckOfCards, (req, res) => {
   /*
-    from axios: https://oscards/decks/1
+    from axios: https://oscards/deck/1
     processed in express: req.params = {
       deckId: 1
     }
   */
-  console.log(req);
   res.status(200).send(res.locals.data);
-
 });
 
 // cardRouter.get('/', cardController.readCard, (req, res) => {

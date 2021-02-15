@@ -15,7 +15,7 @@ const cardSchema = new mongoose.Schema ({
     required: true
   },
   // deck -> options numbers or strings ... REQUIRED
-  deck: {
+  deckId: {
     type: String,
     required: true
   }

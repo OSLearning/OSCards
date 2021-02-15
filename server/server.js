@@ -14,7 +14,7 @@ const mongoURI = `${process.env.MONGO_URI}`;
 
 // connect to instance of mongodb atlas
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true})
-  .then((result) => {
+  .then(() => {
     app.listen(PORT, () => console.log(`Listening on PORT: ${PORT}`));
   })
   .catch((err) => console.log(err));
