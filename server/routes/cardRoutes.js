@@ -20,6 +20,7 @@ cardRouter.get('/decks/:deckId', cardController.readDeckOfCards, (req, res) => {
       deckId: 1
     }
   */
+  console.log(req);
   res.status(200).send(res.locals.data);
 
 });
