@@ -16,7 +16,7 @@ const cardSchema = new mongoose.Schema ({
   },
   // deck -> options numbers or strings ... REQUIRED
   deck: {
-    type: String,
+    type: Number,
     required: true
   }
 });
