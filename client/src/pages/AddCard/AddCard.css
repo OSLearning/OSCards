@@ -1,5 +1,6 @@
 h2 {
   color: rgb(0, 0, 0);
+  text-align: center;
 }
 
 .submitButton {
@@ -16,10 +17,12 @@ h2 {
   border: thin solid blue;
   border-radius: 10px;
   padding: 10px;
+  max-width: 500px;
+  margin: auto;
 }
 
 .addcard {
-  padding: 20px; 
+  padding: 20px;
 }
 
 input {
