@@ -45,13 +45,15 @@ class Deck extends Component {
           <div key={i} className="flashcard">
             <h5 className="card-title">{current.term}</h5>
             <p className="card-text">{current.definition}</p>
-            <button type="button" className="btn btn-primary btn-sm">delete card</button>
-            <button type="button" className="btn btn-primary btn-sm">update card</button>
+            <div className="d-flex flex-row justify-content-around">
+              <button type="button" className="btn btn-primary btn-sm">delete card</button>
+              <button type="button" className="btn btn-primary btn-sm">update card</button>
+            </div>
           </div>
         )
     })
     return (
-        <div>
+        <div className="cards">
             {componentsToRender}
         </div>
 
