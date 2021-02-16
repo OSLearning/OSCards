@@ -37,9 +37,9 @@ class AddCard extends Component {
   handleSubmit() {
     let term = this.state.term
     let definition = this.state.definition
-    let deck = this.state.deck
+    let deckId = this.state.deck
     let obj = {
-      deck,
+      deckId,
       definition,
       term
     }

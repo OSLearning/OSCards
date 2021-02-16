@@ -14,7 +14,7 @@ class Decks extends Component {
         componentArr.push(
           <div key={i} className="card-body">
             <h5 className="card-title">Deck {arr[i]}</h5>
-            <p className="card-text"> Example Text</p>
+            <p className="card-text"></p>
             <Link to={{
                 pathname: `/deck`,
                 state: {
