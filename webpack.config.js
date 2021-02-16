@@ -25,11 +25,11 @@ module.exports = {
     ],
   },
   devServer: {
-    // contentBase: './client/',
-    publicPath: '/dist/',
-    proxy: {
-      '/': 'http://localhost:3000',
+    host: 'localhost',
+    port: 8080,
+    historyApiFallback: true,
+    inline: true,
+    proxy: { "/": { target: 'http://localhost:3000', secure: false }
     },
-    hot: true,
   },
 };
