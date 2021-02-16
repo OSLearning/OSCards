@@ -86,7 +86,7 @@ git push origin feature/fooBar
 - Handle DELETE requests to delete a 'card' document from the 'cards' collection. 
 - Handle DELETE and PUT requests to delete or modify a deck.  
 - Restructure database to accommodate multiple users. 
-- Serve deck data to the frontend as a doubly-linked-list to enable "quiz" style. Doubly-linked-list data structure will enable forward and backward progression through a queue of cards. 
+- Serve deck data to the frontend as a doubly-linked-list to enable "quiz" mode. Doubly-linked-list data structure will enable forward and backward progression through a queue of cards. 
 - Randomize the order of cards in "quiz" mode. 
 
 https://github.com/OSLearning/OSCards
