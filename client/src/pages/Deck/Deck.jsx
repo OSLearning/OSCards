@@ -53,7 +53,7 @@ class Deck extends Component {
         )
     })
     return (
-        <div>
+        <div className="cards">
             {componentsToRender}
         </div>
 
