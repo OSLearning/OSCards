@@ -6,34 +6,36 @@ import axios from 'axios';
 class AddCard extends Component {
   constructor(props) {
     super(props);
+  // set our state to empty value to be updated in the forms rendered below
     this.state = {
         term: '',
         definition: '',
         deck: 0
     }
+  // binding our functionality to 'this' to allow it to function within our component.
   this.handleSubmit = this.handleSubmit.bind(this);
   this.handleTerm = this.handleTerm.bind(this);
   this.handleDefinition = this.handleDefinition.bind(this);
   this.handleDeck = this.handleDeck.bind(this);
   }
-  // helper functions to handle entries
+  // handles updating our term state value with any input it receives. 
   handleTerm(event) {
     event.preventDefault();
     this.setState({term: event.target.value})
-    // console.log(this.state.cardForm)
+  // console.log(this.state.cardForm)
   }
-
+  // handles updating our definition state value with any input it receives.
   handleDefinition(event) {
     event.preventDefault();
     this.setState({definition: event.target.value})
   }
-
+  // handles updating our deck state value with any input it receives. 
   handleDeck(event) {
     console.log(event.target.value)
     event.preventDefault();
     this.setState({deck: event.target.value})
   }
-
+  // handles our post request to our database taking the values currently saved in state
   handleSubmit() {
     let term = this.state.term
     let definition = this.state.definition
@@ -43,7 +45,6 @@ class AddCard extends Component {
       definition,
       term
     }
-
     axios.post("/card", obj)
     .then((res) => {
       console.log("res: ", res);
@@ -53,6 +54,7 @@ class AddCard extends Component {
     })
   }
 
+  // The render below deals with creating a form with a dropdown menu that has numbers associated to the decks available to the user.
 
   render () {
     let context = this;
