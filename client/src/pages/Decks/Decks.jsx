@@ -4,12 +4,13 @@ import "./Decks.css";
 import axios from 'axios';
 
 
-// create a page to view all deck options, and create a get request to our DB
+  // create a page to view all deck options, and create a get request to our DB
 class Decks extends Component {
     render() {
       const arr = [1, 2, 3, 4, 5];
       const componentArr = [];
-
+  // the loop below deals with inserting our chosen deck number to the associated router link
+  // this placed "deckNumber" into this.props.location.state and sends it over to decks.
       for (let i = 0; i < arr.length; i += 1) {
         componentArr.push(
           <div key={i} className="card-body">
@@ -25,6 +26,7 @@ class Decks extends Component {
           </div>
         )
       }
+  // Below, we return our created array of each of the decks with a link associated to the number they are trying to request
         return (
               <div>
                 {componentArr};
@@ -32,6 +34,5 @@ class Decks extends Component {
         )
     }
 }
-
 
 export default Decks;

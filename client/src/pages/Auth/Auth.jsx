@@ -5,6 +5,7 @@ import axios from 'axios';
 
 // create a landing page for authorization
 // ## stretch feature to create a get request to our DB for user/pw 
+// within this authorization there is a dedicated skip button to lead into the rest of the site. 
 class Auth extends Component {
     render() {
         return (
