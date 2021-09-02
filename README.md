@@ -51,7 +51,7 @@ As this project is still in its beta stages, there is no production-ready instal
 
 <hr>
 
-### Back-End Features
+### Back-End Notes
 - Predominant backend packages: [Express](https://expressjs.com/) and [Mongoose](https://mongoosejs.com/docs/)
 - All persistent data is stored in a [Mongo DB Atlas](https://docs.mongodb.com/manual/introduction/) server
 - Web page is connected to Mongo DB Atlas via a 'mongoURI'. *The existing 'mongoURI' is private and a new database cluster must be established in any future iterations of osCards.** 
