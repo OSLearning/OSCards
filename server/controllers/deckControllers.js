@@ -19,7 +19,6 @@ deckController.readDeckOfCards = (req, res, next) => {
   promise
     .then((data) => {
       res.locals.data = data;
-      console.log(res.locals.data);
       next();
     })
     .catch(() => next(new Error('Error in readDeckOfCards read method')));

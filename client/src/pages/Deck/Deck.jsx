@@ -16,11 +16,9 @@ class Deck extends Component {
      
   componentDidMount() {
     const {deckNumber} = this.props.location.state
-    console.log(deckNumber)
 
     axios.get(`/deck/${deckNumber}`)
       .then((res) => {
-        console.log("res: ", res);
         this.setState({deck: res})
       })
       .catch((err) => {
@@ -37,7 +35,6 @@ class Deck extends Component {
     const componentsToRender = [];
     
     const inputArray = this.state.deck.data || [];
-    console.log('input array', inputArray)
 
     
     inputArray.map((current, i) => {

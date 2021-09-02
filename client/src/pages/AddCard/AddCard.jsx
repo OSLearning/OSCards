@@ -22,7 +22,6 @@ class AddCard extends Component {
   handleTerm(event) {
     event.preventDefault();
     this.setState({term: event.target.value})
-  // console.log(this.state.cardForm)
   }
   // handles updating our definition state value with any input it receives.
   handleDefinition(event) {
@@ -31,7 +30,6 @@ class AddCard extends Component {
   }
   // handles updating our deck state value with any input it receives. 
   handleDeck(event) {
-    console.log(event.target.value)
     event.preventDefault();
     this.setState({deck: event.target.value})
   }
@@ -47,7 +45,6 @@ class AddCard extends Component {
     }
     axios.post("/card", obj)
     .then((res) => {
-      console.log("res: ", res);
     })
     .catch((err) => {
       console.log("err: ", err);
