@@ -4,8 +4,6 @@
 
 OS Cards is a flashcard based, open-source, learning aid application intended to provide options for targeting an individual's preferred learning style - i.e. visual, auditory, kinesthetic, etc.
 
-<br>
-
 ![An infographic by "Integrated Learning Strategies" displaying learning styles -- Visual, Aural, Verbal, Physical, Logical, Social, and Solitary -- along with their descriptions](https://ilslearningcorner.com/wp-content/uploads/2016/02/learning-styles-infographic-header.jpg) 
 
 <hr>
@@ -22,8 +20,6 @@ As this project is still in its beta stages, there is no production-ready instal
     - `npm run dev`: runs the app in development mode
     - `npm run build` then `npm start`: runs the app in production mode
 
-<br>
-
 ## Contribution Guidelines
 
 - Follow the steps above to get a clone of the repo onto your machine
@@ -32,8 +28,6 @@ As this project is still in its beta stages, there is no production-ready instal
 - Push to the relevant branch of your Github repository: `git push origin <branch name>`
 - Open a new [Pull Request](https://github.com/OSLearning/OSCards/pulls)
 - Request review from one or more of the OSLearning members
-
-<br>
 
 ## Notes to Prospective Contributors
 
@@ -54,7 +48,7 @@ As this project is still in its beta stages, there is no production-ready instal
 - Provide delete and update functionality to the DECK component
 - Provide a "quiz" style component rendering individual flashcards showing only term or definition; tap/click to flip; swipe to deal new card
 - Create a social network of users to share saved decks
-<br>
+
 <hr>
 
 ### Back-End Features
