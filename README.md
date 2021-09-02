@@ -8,48 +8,44 @@ OS Cards is a flashcard based, open-source, learning aid application intended to
 
 ![An infographic by "Integrated Learning Strategies" displaying learning styles -- Visual, Aural, Verbal, Physical, Logical, Social, and Solitary -- along with their descriptions](https://ilslearningcorner.com/wp-content/uploads/2016/02/learning-styles-infographic-header.jpg) 
 
-<br><br>
+<hr>
 
-## Installation
+## Getting Started
 
-- Fork from this orginizational repository (should you be interested in contributing to this project) 
-- Clone the repository to your local terminal and access the project from within your preferred IDE or code editor (e.g. VS Code, Atom, Sublime)
-- Use the following commands to have node package manager install application dependencies and initialize the development server :
+As this project is still in its beta stages, there is no production-ready installation. Please follow the following instructions to install:
 
-```bash
-npm install 
-npm run dev
-```
+- Fork from the [OSLearning repository](https://github.com/OSLearning/OSCards)
+- Clone the repository to your local machine and access the project from within your preferred IDE or code editor (e.g. VS Code, Atom, Sublime)
+- Scripts to know:
+    - `npm install`: node package manager installs application dependencies
+        - this *must* be done once upon first cloning the project, then every subsequent time that dependencies change
+    - `npm run dev`: runs the app in development mode
+    - `npm run build` then `npm start`: runs the app in production mode
+
 <br>
 
 ## Contribution Guidelines
 
-- Create your feature branch local to your terminal
-```bash
-git checkout -b feature/<name your feature>
-```
-- Commit your changes 
-```bash
-git commit -m 'feature branch description'
-```
-- Push to your Github repository 
-```bash
-git push origin feature/fooBar
-```
-- Create a new [Pull Request](https://github.com/OSLearning/OSCards/pulls)
-<br><br>
+- Follow the steps above to get a clone of the repo onto your machine
+- Create your feature branch local to your machine: `git checkout -b <branch name>`
+- Commit your changes: `git commit -m '<description>'`
+- Push to the relevant branch of your Github repository: `git push origin <branch name>`
+- Open a new [Pull Request](https://github.com/OSLearning/OSCards/pulls)
+- Request review from one or more of the OSLearning members
+
+<br>
 
 ## Notes to Prospective Contributors
 
-### Front End Notes
+### Front-End Notes
 - Component have their own independent sheets to implement styling
-- Each Component also is routed to their associated index.js file
+- Each component also is routed to their associated index.js file
 - We have implemented [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) into our styling
 - All requests to our backend/database are through [Axios](https://github.com/axios/axios)
 - To route between our pages, we used [React Routers](https://reactrouter.com/web/guides/quick-start)
 - For reference to our use of 'this.props.location.state' refer to the [React Router docs](https://reactrouter.com/web/api/location)
 
-### Front End Stretch Features
+### Front-End Stretch Features
 - Provide flashcard text-to-speech functionality: (refer to [Google text-to-speech API](https://any-api.com/googleapis_com/speech/docs/API_Description))
 - Provide gifs/images in addition to text (here's one solution: [giphy-API](https://developers.giphy.com/docs/api#endpoint))
 - Provide haptic touch response for mobile user interaction ([Here](https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/haptics/) and [here](https://medium.com/better-programming/adding-haptics-to-your-app-57439c358e8e) are some good readings on the topic)
