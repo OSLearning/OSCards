@@ -74,7 +74,7 @@ As this project is still in its beta stages, there is no production-ready instal
 
 ## Contributors
 
-Alfred @astaiglesia • Annie @annieshinn • Ramtin @Rahmteen • Tolan @taoantaoan • Zach @zbrucker
+Alfred [@astaiglesia](https://github.com/astaiglesia) • Annie [@annieshinn](https://github.com/annieshinn) • Ramtin [@Rahmteen](https://github.com/Rahmteen) • Tolan [@taoantaoan](https://github.com/taoantaoan) • Zach [@zbrucker](https://github.com/zbrucker)
 
 ## License
 
