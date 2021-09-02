@@ -72,6 +72,10 @@ As this project is still in its beta stages, there is no production-ready instal
 - Serve deck data to the frontend as a doubly-linked-list to enable "quiz" mode. Doubly-linked-list data structure will enable forward and backward progression through a queue of cards
 - Randomize the order of cards in "quiz" mode
 
+## Contributors
+
+Alfred @astaiglesia • Annie @annieshinn • Ramtin @Rahmteen • Tolan @taoantaoan • Zach @zbrucker
+
 ## License
 
 OS Cards is licensed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html), also included in our repository in the COPYING file.
