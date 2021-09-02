@@ -1,4 +1,4 @@
-# OS Cards <img src="./img_src/yeti.png" width=75 align=right>
+# OS Cards <img src="./img_src/yeti.png" alt="YetiCrab logo - half yeti, half crab" width=75 align=right>
 
 ## Overview
 
@@ -6,7 +6,7 @@ OS Cards is a flashcard based, open-source, learning aid application intended to
 
 <br>
 
-![Learning Styles](https://ilslearningcorner.com/wp-content/uploads/2016/02/learning-styles-infographic-header.jpg) 
+![An infographic by "Integrated Learning Strategies" displaying learning styles -- Visual, Aural, Verbal, Physical, Logical, Social, and Solitary -- along with their descriptions](https://ilslearningcorner.com/wp-content/uploads/2016/02/learning-styles-infographic-header.jpg) 
 
 <br><br>
 
